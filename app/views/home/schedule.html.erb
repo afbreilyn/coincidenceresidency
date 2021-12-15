@@ -3,14 +3,15 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading">
-          2020 Schedule
+          2022 Schedule
         </h2>
         <br>
         <p>
           everything is free and open to anyone who wants to participate / view / engage.
         </p>
         <p>
-          please feel free to <a href="mailto:coincidence.festival@gmail.com">email us</a> if you have questions.
+          please feel free to <a href="mailto:coincidence.festival@gmail.com">email us</a> if you have questions or
+          would like to attend.
         </p>
         <hr class="primary">
       </div>
@@ -19,212 +20,89 @@
   <div class="container">
     <div class="day">
       <%= render partial: 'home/daily_header', :locals => {
-          text: 'Friday, Jan 10 [Arrival Day]'
+        text: 'Jan 2'
       } %>
       <%= render partial: 'home/activity_deats', :locals => {
-          time: '8pm - 10pm',
-          title1: 'Welcome Concert',
-          title2: '(pieces by Pitan, Gottschalk, Bullock, Eckl, and Pisaro)',
-          is_concert: true,
-          concert_link: "https://www.facebook.com/events/1283662845139141/"
+        time: '8pm - 930pm',
+        title1: 'Welcome Concert',
+        title2: 'Marilyn Arsem, Jennie Gottschalk, Andrea Cape, and Luke Martin & Aaron Foster Breilyn',
+        is_concert: true,
+        # concert_link: "",
+        description: ["Washington Street Art Center (WSAC)",
+                      "321 Washington Street, Somerville MA",
+                      "Free or Donation",
+                      " ",
+                      "RSVP Required (15 people max)",
+                      "Proof of Vaccination (at door)",
+                      "Masks Required",
+        ]
       } %>
     </div>
     <hr>
     <div class="day">
       <%= render partial: 'home/daily_header', :locals => {
-          text: 'Saturday, Jan 11'
+        text: 'Jan 6'
       } %>
       <%= render partial: 'home/activity_deats', :locals => {
-          time: '10am - 11am',
-          title1: 'Doug Farrand Reading Piece'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '11am - 1pm			',
-          title1: 'General Open Discussion, Introduction to Festival, Etc.'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '1pm - 230pm',
-          title1: 'Lunch'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '230pm - 5pm',
-          title1: 'General Intro of People’s (Ongoing) Pieces/Ideas/Concerns'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '530pm',
-          title1: 'Group dinner (for first night)'
+        time: '12pm (noon)',
+        title1: 'Museum of Fine Arts, Boston',
+        # title2: 'Marilyn Arsem, Jennie Gottschalk, Andrea Cape, and Luke Martin & Aaron Foster Breilyn',
+        is_concert: true,
+        concert_link: "",
+        description: ["465 Huntington Ave, Boston, MA 02115", "Email for more information"]
       } %>
       <br>
       <%= render partial: 'home/activity_deats', :locals => {
-          time: '8pm - 930pm',
-          title1: 'Michael Pisaro/Cherlyn Liu Concert',
-          is_concert: true,
-          concert_link: "https://www.facebook.com/events/594177368005443/"
+        time: '7pm - 9pm',
+        title1: 'Co-Incidence Showcase',
+        title2: 'Sets TBD',
+        is_concert: true,
+        concert_link: "",
+        description: ["Pink Noise Studios",
+                      "15 Ward St., Somerville MA",
+                      "Free or Donation",
+                      "Thursday 1/6/22 @ 7 - 9PM",
+                      " ",
+                      "Proof of Vaccination (at door)",
+                      "Masks Required",
+        ]
       } %>
     </div>
     <hr>
     <div class="day">
       <%= render partial: 'home/daily_header', :locals => {
-          text: 'Sunday, Jan 12'
+        text: 'Jan 7'
       } %>
       <%= render partial: 'home/activity_deats', :locals => {
-          time: '10am - 11am',
-          title1: 'Doug Farrand Reading Piece'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '11am - 1pm',
-          title1: 'General Open Discussion'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '1pm - 230pm',
-          title1: 'Lunch'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '230pm - 5pm',
-          title1: 'Manfred Werder talk/discussion'
+        time: '2pm',
+        title1: 'Walden Pond',
+        # title2: 'Marilyn Arsem, Jennie Gottschalk, Andrea Cape, and Luke Martin & Aaron Foster Breilyn',
+        is_concert: true,
+        concert_link: "",
+        description: ["915 Walden St, Concord, MA 01742", "Email for more information"]
       } %>
     </div>
     <hr>
     <div class="day">
       <%= render partial: 'home/daily_header', :locals => {
-          text: 'Monday, Jan 13'
+        text: 'Jan 8'
       } %>
       <%= render partial: 'home/activity_deats', :locals => {
-          time: '10am - 11am',
-          title1: 'Doug Farrand Reading Piece'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '11am - 1pm',
-          title1: 'General Open Discussion'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '1pm - 230pm',
-          title1: 'Lunch'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '230pm - 5pm',
-          title1: 'the unlimited present agency, talk/activity'
+        time: '4pm',
+        title1: 'Final Group Concert',
+        title2: 'Sets TBD',
+        is_concert: true,
+        concert_link: "",
+        description: ["Washington Street Art Center (WSAC)",
+                      "321 Washington Street, Somerville MA",
+                      "Free or Donation",
+                      " ",
+                      "RSVP Required (15 people max)",
+                      "Proof of Vaccination (at door)",
+                      "Masks Required",
+        ]
       } %>
     </div>
     <hr>
-    <div class="day">
-      <%= render partial: 'home/daily_header', :locals => {
-          text: 'Tuesday, Jan 14'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '10am - 11am',
-          title1: 'Doug Farrand Reading Piece'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '11am - 1pm',
-          title1: 'General Open Discussion'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '1pm - 7pm (approx)',
-          title1: 'Lunch / Grace Carney: "The Cambridge-Dorchester Tunnel"',
-          title2: '(Walk to Harvard Square; Lunch there; Take T down to Dorchester with Grace; Tea and Snacks with Grace’s Grandmother; Take T back to WSAC; Group Discussion/Performance)'
-      } %>
-    </div>
-    <hr>
-    <div class="day">
-      <%= render partial: 'home/daily_header', :locals => {
-          text: 'Wednesday, Jan 15'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '10am - 11am',
-          title1: 'Doug Farrand Reading Piece'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '11am - 1pm',
-          title1: 'Group travel to Walden Pond'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '1pm - 230pm',
-          title1: 'Lunch'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '[Afternoon open]',
-          title1: '',
-          is_concert: true
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '7pm - 830pm',
-          title1: 'Manfred Werder Concert',
-          is_concert: true,
-          concert_link: "https://www.facebook.com/events/1265835153624891/"
-      } %>
-    </div>
-    <hr>
-    <div class="day">
-      <%= render partial: 'home/daily_header', :locals => {
-          text: 'Thursday, Jan 16'
-      } %>
-      <div class="row">
-        <div class="col-xs-12">
-          <p class="black"><b>Day Off</b></p>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <div class="day">
-      <%= render partial: 'home/daily_header', :locals => {
-          text: 'Friday, Jan 17'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '10am - 11am',
-          title1: 'Doug Farrand Reading Piece'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '11am - 1pm',
-          title1: 'General Open Discussion'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '1pm - 230pm',
-          title1: 'Lunch'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '[Afternoon open]',
-          title1: '',
-          is_concert: true
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '7pm - 830pm',
-          title1: 'Robert Blatt Open Talk/Workshop/Concert',
-          is_concert: true,
-          concert_link: "https://www.facebook.com/events/2484068061849278/"
-      } %>
-    </div>
-    <hr>
-    <div class="day">
-      <%= render partial: 'home/daily_header', :locals => {
-          text: 'Saturday, Jan 18'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '10am - 11am',
-          title1: 'Doug Farrand Reading Piece'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '1115am - ',
-          title1: 'Joachim Eckl: Chorus of Screamers, Walk to Harvard Square',
-          title2: '[continues into lunch]'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '- 2pm',
-          title1: 'Lunch'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '3pm - 430am',
-          title1: 'Open Discussion/Prep for Concert'
-      } %>
-      <%= render partial: 'home/activity_deats', :locals => {
-          time: '7pm -830pm',
-          title1: 'Finale: Co-Incidence Festival 2020',
-          is_concert: true,
-          concert_link: "https://www.facebook.com/events/410142249710176",
-          description: "We are very pleased to be presenting a concert-talk by John Holloway on the relation between experimental music, our time together during the Festival, and revolutionary thought (and John's burgeoning new career as an experimental musician). John's talk will be accompanied, sonically, by the group of artists."
-      } %>
-
-    </div>
   </div>
 </section>
-git

@@ -23,8 +23,14 @@
         </a>
         <% if local_assigns[:description] %>
           <p class="indent">
-            <%= local_assigns[:description] %>
-          </p>
+            <% local_assigns[:description].each do |line| %>
+              <% if line === " " %>
+                <br>
+              <% else %>
+                <p class="no-margin"><%= line %></p>
+              <% end %>
+            <% end %>
+            </p>
         <% end %>
       </i>
     <% else %>
