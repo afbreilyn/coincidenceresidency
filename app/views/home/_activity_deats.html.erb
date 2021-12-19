@@ -42,6 +42,17 @@
           <%= local_assigns[:title2] %>
         </p>
       <% end %>
+      <% if local_assigns[:description] %>
+        <p class="indent">
+          <% local_assigns[:description].each do |line| %>
+            <% if line === " " %>
+              <br>
+            <% else %>
+              <p class="no-margin"><%= line %></p>
+            <% end %>
+          <% end %>
+          </p>
+      <% end %>
     <% end %>
   </div>
 </div>

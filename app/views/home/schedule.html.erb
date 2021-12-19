@@ -41,15 +41,61 @@
     <hr>
     <div class="day">
       <%= render partial: 'home/daily_header', :locals => {
+        text: 'Jan 3'
+      } %>
+      <%= render partial: 'home/activity_deats', :locals => {
+        time: '12pm - 6pm',
+        title1: 'Symposium 1: We.',
+        title2: 'What is a we? How do people relate to it? Other communities? What does it mean to be an individual? Identity?',
+        is_concert: false,
+        # concert_link: "",
+        description: ["Washington Street Art Center (WSAC)"]
+      } %>
+    </div>
+    <hr>
+    <div class="day">
+      <%= render partial: 'home/daily_header', :locals => {
+        text: 'Jan 4'
+      } %>
+      <%= render partial: 'home/activity_deats', :locals => {
+        time: '12pm - 6pm',
+        title1: 'Symposium 2: Conviviality',
+        # title2: 'Conviviality',
+        is_concert: false,
+        # concert_link: "",
+        description: ["Email for location details"]
+      } %>
+    </div>
+    <hr>
+    <div class="day">
+      <%= render partial: 'home/daily_header', :locals => {
+        text: 'Jan 5'
+      } %>
+      <%= render partial: 'home/activity_deats', :locals => {
+        time: '12pm - 6pm',
+        title1: 'Symposium 3: Hope / Risk',
+        # title2: 'Conviviality',
+        is_concert: false,
+        # concert_link: "",
+        description: ["Washington Street Art Center (WSAC)"]
+      } %>
+    </div>
+    <hr>
+    <div class="day">
+      <%= render partial: 'home/daily_header', :locals => {
         text: 'Jan 6'
       } %>
       <%= render partial: 'home/activity_deats', :locals => {
         time: '12pm (noon)',
-        title1: 'Museum of Fine Arts, Boston',
+        title1: 'Symposium 4: Art and Morality',
         # title2: 'Marilyn Arsem, Jennie Gottschalk, Andrea Cape, and Luke Martin & Aaron Foster Breilyn',
-        is_concert: true,
+        is_concert: false,
         concert_link: "",
-        description: ["465 Huntington Ave, Boston, MA 02115", "Email for more information"]
+        description: [
+          "Museum of Fine Arts, Boston",
+          "465 Huntington Ave, Boston, MA 02115",
+          "Email for meeting information"
+        ]
       } %>
       <br>
       <%= render partial: 'home/activity_deats', :locals => {
@@ -75,11 +121,14 @@
       } %>
       <%= render partial: 'home/activity_deats', :locals => {
         time: '2pm',
-        title1: 'Walden Pond',
-        # title2: 'Marilyn Arsem, Jennie Gottschalk, Andrea Cape, and Luke Martin & Aaron Foster Breilyn',
-        is_concert: true,
+        title1: 'Symposium 5: Nature',
+        is_concert: false,
         concert_link: "",
-        description: ["915 Walden St, Concord, MA 01742", "Email for more information"]
+        description: [
+          "Walden Pond",
+          "915 Walden St, Concord, MA 01742",
+          "Email for more information"
+        ]
       } %>
     </div>
     <hr>
@@ -87,6 +136,16 @@
       <%= render partial: 'home/daily_header', :locals => {
         text: 'Jan 8'
       } %>
+      <%= render partial: 'home/activity_deats', :locals => {
+        time: '2pm',
+        title1: 'Symposium 5: Death',
+        is_concert: false,
+        concert_link: "",
+        description: [
+          "Washington Street Art Center (WSAC)"
+        ]
+      } %>
+    <br>
       <%= render partial: 'home/activity_deats', :locals => {
         time: '4pm',
         title1: 'Final Group Concert',
