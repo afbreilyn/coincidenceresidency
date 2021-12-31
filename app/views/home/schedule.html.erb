@@ -25,16 +25,22 @@
       <%= render partial: 'home/activity_deats', :locals => {
         time: '8pm - 930pm',
         title1: 'Welcome Concert',
-        title2: 'Marilyn Arsem, Jennie Gottschalk, Andrea Pensado, and Luke Martin & Aaron Foster Breilyn',
+        title2: [
+          'Marilyn Arsem, "Two Bowls and a Small Glass of Water"',
+          'Jennie Gottschalk, "Here We Are (D)"',
+          'Andrea Pensado',
+          'Luke Martin & Aaron Foster Breilyn, "fragile being, hopeful becoming" (Michael Pisaro)',
+        ],
         is_concert: true,
         concert_link: "https://www.facebook.com/events/322926086363437",
-        description: ["Washington Street Art Center (WSAC)",
-                      "321 Washington Street, Somerville MA",
-                      "Free or Donation",
-                      " ",
-                      "RSVP Required (15 people max)",
-                      "Proof of Vaccination (at door)",
-                      "Masks Required",
+        description: [
+          "Washington Street Art Center (WSAC)",
+          "321 Washington Street, Somerville MA",
+          "Free or Donation",
+          " ",
+          "RSVP Required (15 people max)",
+          "Proof of Vaccination (at door)",
+          "Masks Required",
         ]
       } %>
     </div>
@@ -46,7 +52,7 @@
       <%= render partial: 'home/activity_deats', :locals => {
         time: '12pm - 6pm',
         title1: 'Symposium 1: We.',
-        title2: 'What is a we? How do people relate to it? Other communities? What does it mean to be an individual? Identity?',
+        title2: ['What is a we? How do people relate to it? Other communities? What does it mean to be an individual? Identity?'],
         is_concert: false,
         # concert_link: "",
         description: ["Washington Street Art Center (WSAC)"]
@@ -101,7 +107,10 @@
       <%= render partial: 'home/activity_deats', :locals => {
         time: '7pm - 9pm',
         title1: 'Co-Incidence Showcase',
-        title2: 'Sets TBD',
+        title2: ['Anne LoVerso',
+                 'James P. Falzone',
+                 'Masaya Ozaki',
+                 'Nina Power'],
         is_concert: true,
         concert_link: "https://www.facebook.com/events/301869861850555",
         description: ["Pink Noise Studios",
@@ -145,11 +154,11 @@
           "Washington Street Art Center (WSAC)"
         ]
       } %>
-    <br>
+      <br>
       <%= render partial: 'home/activity_deats', :locals => {
         time: '4pm',
         title1: 'Final Group Concert',
-        title2: 'Sets TBD',
+        title2: ['Group Pieces TBD', '"Birdsong Concert" (Joachim Eckl)', '"Walden Pond Memory Space" (Alvin Lucier)'],
         is_concert: true,
         concert_link: "https://www.facebook.com/events/3169362443298011",
         description: ["Washington Street Art Center (WSAC)",

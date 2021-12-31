@@ -16,9 +16,17 @@
             <b><%= local_assigns[:title1] %> </b>
           </p>
           <% if local_assigns[:title2] %>
-            <p>
-              <%= local_assigns[:title2] %>
-            </p>
+            <%# local_assigns[:title2].is_a? %>
+              <% local_assigns[:title2].each do |line| %>
+                <p class="no-margin">
+                  <%= line %>
+                </p>
+              <% end %>
+            <%# else %>
+<!--              <p>-->
+                <%#= local_assigns[:title2] %>
+<!--              </p>-->
+            <%# end %>
           <% end %>
         </a>
         <% if local_assigns[:description] %>
