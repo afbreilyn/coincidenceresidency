@@ -14,11 +14,13 @@ Rails.application.routes.draw do
   get '/2019-season' => 'home#season2019'
   get '/2020-season' => 'home#season2020'
   get '/2021-season' => 'home#season2021'
+  get '/2022-season' => 'home#season2022'
 
   get '/home/2017-season' => 'home#season2017'
   get '/home/2018-season' => 'home#season2018'
   get '/home/2019-season' => 'home#season2019'
   get '/home/2020-season' => 'home#season2020'
+  get '/home/2022-season' => 'home#season2022'
   get '/schedule' => 'home#schedule'
 
   get '/application-asdf' => 'penta_years#new', as: 'application'
