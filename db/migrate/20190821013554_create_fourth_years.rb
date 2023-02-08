@@ -1,4 +1,4 @@
-class CreateFourthYears < ActiveRecord::Migration
+class CreateFourthYears < ActiveRecord::Migration[4.2]
   def change
     create_table :fourth_years do |t|
       t.string :name,  null: false, default: ""

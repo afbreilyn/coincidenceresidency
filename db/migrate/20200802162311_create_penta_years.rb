@@ -1,4 +1,4 @@
-class CreatePentaYears < ActiveRecord::Migration
+class CreatePentaYears < ActiveRecord::Migration[4.2]
   def change
     create_table :penta_years do |t|
 

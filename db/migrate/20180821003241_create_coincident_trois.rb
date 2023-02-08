@@ -1,4 +1,4 @@
-class CreateCoincidentTrois < ActiveRecord::Migration
+class CreateCoincidentTrois < ActiveRecord::Migration[4.2]
   def change
     create_table :coincident_trois do |t|
       # personal info

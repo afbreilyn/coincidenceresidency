@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -11,100 +10,99 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200802162311) do
+ActiveRecord::Schema.define(version: 2020_08_02_162311) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "admins", force: :cascade do |t|
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
-    t.string   "reset_password_token"
+  create_table "admins", id: :serial, force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
+    t.integer "sign_in_count", default: 0, null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
-    t.inet     "current_sign_in_ip"
-    t.inet     "last_sign_in_ip"
+    t.inet "current_sign_in_ip"
+    t.inet "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.index ["email"], name: "index_admins_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
   end
 
-  add_index "admins", ["email"], name: "index_admins_on_email", unique: true, using: :btree
-  add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true, using: :btree
-
-  create_table "coincident_trois", force: :cascade do |t|
-    t.string   "name",             default: "", null: false
-    t.string   "email",            default: "", null: false
-    t.text     "address",          default: "", null: false
-    t.date     "birthday"
-    t.string   "website"
-    t.text     "tell_us",          default: "", null: false
-    t.text     "why_ams_you",      default: "", null: false
-    t.string   "link1",            default: "", null: false
-    t.string   "link2"
-    t.string   "link3"
-    t.string   "link_to_prompt",   default: "", null: false
-    t.string   "how_did_you_hear"
-    t.datetime "created_at",                    null: false
-    t.datetime "updated_at",                    null: false
+  create_table "coincident_trois", id: :serial, force: :cascade do |t|
+    t.string "name", default: "", null: false
+    t.string "email", default: "", null: false
+    t.text "address", default: "", null: false
+    t.date "birthday"
+    t.string "website"
+    t.text "tell_us", default: "", null: false
+    t.text "why_ams_you", default: "", null: false
+    t.string "link1", default: "", null: false
+    t.string "link2"
+    t.string "link3"
+    t.string "link_to_prompt", default: "", null: false
+    t.string "how_did_you_hear"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table "coincident_twos", force: :cascade do |t|
-    t.string   "name",             default: "", null: false
-    t.string   "email",            default: "", null: false
-    t.text     "address",          default: "", null: false
-    t.date     "birthday"
-    t.string   "website"
-    t.string   "how_did_you_hear"
-    t.text     "tell_us",          default: "", null: false
-    t.string   "link_to_prompt",   default: "", null: false
-    t.string   "link1",            default: "", null: false
-    t.string   "link2"
-    t.string   "link3"
-    t.datetime "created_at",                    null: false
-    t.datetime "updated_at",                    null: false
-    t.string   "instruments"
+  create_table "coincident_twos", id: :serial, force: :cascade do |t|
+    t.string "name", default: "", null: false
+    t.string "email", default: "", null: false
+    t.text "address", default: "", null: false
+    t.date "birthday"
+    t.string "website"
+    t.string "how_did_you_hear"
+    t.text "tell_us", default: "", null: false
+    t.string "link_to_prompt", default: "", null: false
+    t.string "link1", default: "", null: false
+    t.string "link2"
+    t.string "link3"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "instruments"
   end
 
-  create_table "coincidents", force: :cascade do |t|
-    t.string   "name",                default: "", null: false
-    t.string   "email",               default: "", null: false
-    t.text     "address",             default: "", null: false
-    t.text     "project_description", default: "", null: false
-    t.string   "link1",               default: "", null: false
-    t.string   "link2"
-    t.string   "link3"
-    t.string   "website"
-    t.string   "cv_resume_link"
-    t.date     "birthday",                         null: false
-    t.text     "why_apply"
-    t.datetime "created_at",                       null: false
-    t.datetime "updated_at",                       null: false
-    t.string   "instruments"
+  create_table "coincidents", id: :serial, force: :cascade do |t|
+    t.string "name", default: "", null: false
+    t.string "email", default: "", null: false
+    t.text "address", default: "", null: false
+    t.text "project_description", default: "", null: false
+    t.string "link1", default: "", null: false
+    t.string "link2"
+    t.string "link3"
+    t.string "website"
+    t.string "cv_resume_link"
+    t.date "birthday", null: false
+    t.text "why_apply"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "instruments"
   end
 
-  create_table "fourth_years", force: :cascade do |t|
-    t.string   "name",          default: "", null: false
-    t.string   "email",         default: "", null: false
-    t.string   "proposal_link", default: "", null: false
-    t.text     "about_me",      default: ""
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+  create_table "fourth_years", id: :serial, force: :cascade do |t|
+    t.string "name", default: "", null: false
+    t.string "email", default: "", null: false
+    t.string "proposal_link", default: "", null: false
+    t.text "about_me", default: ""
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table "penta_years", force: :cascade do |t|
-    t.string   "name",                default: "", null: false
-    t.string   "email",               default: "", null: false
-    t.string   "about_me",            default: "", null: false
-    t.string   "attendance_capacity", default: "", null: false
-    t.string   "website",             default: "", null: false
-    t.string   "location",            default: "", null: false
-    t.text     "why",                 default: "", null: false
-    t.string   "proposal_link",       default: "", null: false
-    t.datetime "created_at",                       null: false
-    t.datetime "updated_at",                       null: false
+  create_table "penta_years", id: :serial, force: :cascade do |t|
+    t.string "name", default: "", null: false
+    t.string "email", default: "", null: false
+    t.string "about_me", default: "", null: false
+    t.string "attendance_capacity", default: "", null: false
+    t.string "website", default: "", null: false
+    t.string "location", default: "", null: false
+    t.text "why", default: "", null: false
+    t.string "proposal_link", default: "", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

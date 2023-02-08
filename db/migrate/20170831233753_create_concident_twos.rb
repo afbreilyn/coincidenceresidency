@@ -1,4 +1,4 @@
-class CreateConcidentTwos < ActiveRecord::Migration
+class CreateConcidentTwos < ActiveRecord::Migration[4.2]
   def change
     create_table :concident_twos do |t|
       # personal info
