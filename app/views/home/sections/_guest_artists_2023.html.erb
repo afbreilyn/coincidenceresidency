@@ -59,6 +59,16 @@
       website: "https://www.johnholloway.com.mx/",
       description: "John Holloway is a Professor at the Instituto de Ciencias Sociales y Humanidades in the Benemérita Universidad Autónoma de Puebla, Mexico, where he teaches in the graduate school of Sociology. He was previously a lecturer in Politics at the University of Edinburgh."
     } %>
+
+    <hr class="secondary">
+    <%= render partial: 'home/sections/guest_artist_description', :locals => {
+      imageUrl: "marcus-kaiser.jpg",
+      name: "Marcus Kaiser",
+      website: "http://www.marcus-kaiser.net/",
+      description: "Marcus Kaiser studied cello at the Robert Schumann University of Music in Düsseldorf before graduating from the city’s Art Academy. Pursuing an interdisciplinary approach, the artist produces works oscillating between art and music: Marcus Kaiser is a painter, sculptor, installation and performance artist, musician, and composer.
+Usually working simultaneously on different series and groups of works over long periods of time, the artist  combines the results to complex installations on the occasion of major exhibitions - installations that may provide him with a starting point for interactions and further works of art. Interleaving different genres of art is Kaiser’s very programme."
+    } %>
+
     <hr class="secondary">
     <%= render partial: 'home/sections/guest_artist_description', :locals => {
       imageUrl: "2020/michael_pisaro.png",
@@ -66,8 +76,8 @@
       website: "https://www.michaelpisaro-liu.com/",
       description: "Michael Pisaro (born 1961 in Buffalo, New York) is a guitarist and composer and a member of the Wandelweiser collective. While, like other members of Wandelweiser, Pisaro is known for pieces of long duration with periods of silence, in the past fifteen years his work has branched out in many directions, including work with field recording, electronics, improvisation and large ensembles of very different kinds of instrumental constitution. Pisaro has a long-standing collaboration with percussionist Greg Stuart, with over thirty collaborations (pieces and recordings) to date, including their 3-disc set, Continuum Unbound from 2014 and a new piece for amplified percussion and orchestra (to be premiered by the La Jolla Symphony in February, 2020). Recordings of his work have been released by Edition Wandelweiser Records, erstwhile records, New World Records, Hubro, Potlatch, another timbre, meena/ftarri, Senufo Editions, Intonema, winds measure, HEM Berlin and on Pisaro's own imprint, Gravity Wave. Pisaro teaches composition and experimental music the California Institute of the Arts."
     } %>
-    <hr class="secondary">
-    <%= render partial: 'home/sections/guest_artist_description', :locals => {
+<!--    <hr class="secondary">-->
+    <%#= render partial: 'home/sections/guest_artist_description', :locals => {
       imageUrl: "2020/cherlyn.png",
       name: "Cherlyn Pisaro-Liu",
       website: "https://cherlynhsinghsinliu.com/",
@@ -79,6 +89,14 @@
       name: "Nina Power",
       website: "https://ninapower.net/",
       description: "Nina Power is a writer and philosopher. She is the author of One-Dimensional Woman and of many articles. Her forthcoming book What Do Men Want? will be out with Penguin soon. Beyond writing and philosophy, Nina's interests include contemporary experimental music, psychoanalysis, paganism, honesty and groups."
+    } %>
+    <hr class="secondary">
+    <%= render partial: 'home/sections/guest_artist_description', :locals => {
+      imageUrl: "germaine.jpg",
+      name: "Germaine Sijstermans",
+      website: "https://www.germainesijstermans.com/",
+      description: "Germaine Sijstermans is a composer, installation artist and musician. Her works combine ephemeral, often site specific installations with indeterminate music, open to the serendipity of location and time. She explores the phenomenological experience of a space and all that occurs within it through the use of silence, light, sounds, space, and physical presence of oneself and others.
+Sijstermans is constantly cooperating with composers and performers, developing music and performances. In doing so she has had the pleasure of premiering many pieces that were composed for her. Her performances have taken place in venues varying from traditional concert settings to underground stages, located from the Netherlands to Brazil."
     } %>
   </div>
 </section>
