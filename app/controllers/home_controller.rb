@@ -35,4 +35,7 @@ class HomeController < ApplicationController
   def schedule
   end
 
+  def schedule23
+  end
+
 end

@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   get '/home/2019-season' => 'home#season2019'
   get '/home/2020-season' => 'home#season2020'
   get '/home/2022-season' => 'home#season2022'
-  get '/schedule' => 'home#schedule'
+  get '/schedule' => 'home#schedule23'
 
   get '/application-asdf' => 'penta_years#new', as: 'application'
   get '/application' => 'home#index'
