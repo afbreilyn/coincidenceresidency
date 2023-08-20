@@ -47,13 +47,13 @@
         title1: 'Repeating frame for each day',
         is_concert: false,
         description: [
-          'Bernd, TonStillen',
+          "Bernd, 'TonStillen', 09:00",
           ' ',
-          'Breakfast, ca. 9:00',
+          'Breakfast, ca. 09:00',
           'Lunch, ca. 13:00',
           '(Dinner prep, 18:00) / Dinner, 19:00',
           ' ',
-          'Bernd, 102 moments'
+          "Bernd, '102 moments', 17:30"
         ]
       } %>
       <br>
@@ -66,7 +66,8 @@
           "Carolyn, listening activities, open participation, multiple instances",
           "John, speaking music & a world not-yet, open participation (+ one evening performance)",
           "Luka, Hunting Music, open participation workshop, one or two instances",
-          "Michael: Melodic Currents (1) (for Joachim Eckl), open participation, multiple instances",
+          "Michael, Melodic Currents (1) (for Joachim Eckl), open participation, multiple instances",
+          "Anna, The wind of the breathing body"
         ]
       } %>
     </div>
@@ -92,19 +93,9 @@
         title1: '',
         is_concert: false,
         description: [
-          "Open time to meet and discuss the week",
-          " ",
-          "Jennie: Score-making piece, open participation. Introduction of piece.",
-          "John: speaking music & a world not-yet, open participation. Introduction of ideas."
-        ]
-      } %>
-      <br>
-      <%= render partial: 'home/activity_deats', :locals => {
-        time: '',
-        title1: 'Welcome Concert, 21:00 (after dinner)',
-        is_concert: false,
-        description: [
-          "Germaine, Marcus / Luke, aaron / Bernd, James, Joachim / TBD",
+          "10:00h : Open time to meet and discuss the week",
+          "14:00h : Jennie, Score-making piece, open participation. Introduction of piece.",
+          "20:30h : Germaine, Marcus || Bernd, James, Joachim || Luke, aaron"
         ]
       } %>
     </div>
@@ -118,7 +109,8 @@
         title1: '',
         is_concert: false,
         description: [
-          "James: Callander, open participation. Introduction of piece."
+          "10:00h : James: 'Callander', open participation. Introduction of piece.",
+          "20:30h : Martin & Germaine, 'The Voice in the closet'",
         ]
       } %>
     </div>
@@ -132,8 +124,9 @@
         title1: '',
         is_concert: false,
         description: [
-          "Nina: Experimental Writing Workshop, open participation. Session 1.",
-          "Jennie: Score-making piece, open participation. Session 2."
+          "10:30h : Nina, Experimental Writing Workshop, open participation. Session 1.",
+          "14:00h : Jennie, Score-making piece, open participation. Session 2.",
+          "20:30h : Abby, 'Dudley Carter'"
         ]
       } %>
     </div>
@@ -147,7 +140,8 @@
         title1: '',
         is_concert: false,
         description: [
-          "---",
+          "08:15h : Joachim 'journeys in stationary traffic'",
+          "10:20h : Train toe Haslach, Mühkreisbahn Haslach. Museum",
         ]
       } %>
     </div>
@@ -161,16 +155,7 @@
         title1: '',
         is_concert: false,
         description: [
-          "Nina: Experimental Writing Workshop, open participation. Session 2.",
-        ]
-      } %>
-      <br>
-      <%= render partial: 'home/activity_deats', :locals => {
-        time: '',
-        title1: 'Middle Concert, 21:00 (after dinner)',
-        is_concert: false,
-        description: [
-          "James, trio / Germaine / Carolyn / TBD",
+          "20:30h : James, 'trio' || Germaine, 'Juglans' || Carolyn 'Cooks'",
         ]
       } %>
     </div>
@@ -184,8 +169,11 @@
         title1: '',
         is_concert: false,
         description: [
-          "Jennie: Score-making piece, open participation. Session 3.",
-          "John Holloway: speaking music, after dinner performance"
+          "10:30h : Nina, Experimental Writing Workshop, open participation. Session 2.",
+          "14:00h : Jennie, Score-making piece, open participation. Session 3.",
+          "17:00h : VENISSAGE, Michaela, 'Bilderwachstum' || Kathrin 'Die neuen Trāume des Morgen' ",
+          "20:30h : John 'speaking music'",
+          "22:00h : Joachim 'journeys in stationary traffic'",
         ]
       } %>
     </div>
@@ -199,8 +187,9 @@
         title1: '',
         is_concert: false,
         description: [
-          "Nina: Experimental Writing Workshop, open participation. Session 3.",
-          "Marcus & Germaine: installation pink noise (circle III), after dinner performance."
+          "06:00h : Michael 'Melodic Currents'",
+          "14:00h : James: 'Callander', open participation. rehearsal.",
+          "20:30h : Marcus 'pink noise (circle III)'"
         ]
       } %>
     </div>
@@ -211,10 +200,10 @@
       } %>
       <%= render partial: 'home/activity_deats', :locals => {
         time: '',
-        title1: 'Goodbye Concert, 21:00 (after dinner)',
+        title1: '',
         is_concert: false,
         description: [
-          "James, Callander / TBD"
+          "20:30h : James, 'Callander' || Nina 'Reading' "
         ]
       } %>
     </div>
