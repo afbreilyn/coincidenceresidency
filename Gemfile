@@ -1,22 +1,22 @@
 source 'https://rubygems.org'
 # git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.2'
+ruby '3.1.2'
 
-gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
+# gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
 
 gem 'nokogiri'
 # gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
-gem 'rails', '~> 5.0'
-gem 'pg', '>= 0.18', '< 2.0'
+gem 'rails'
+gem 'pg'
 gem 'sass-rails'
 gem 'bootstrap-sass'
 gem 'uglifier'
 gem 'coffee-rails'
 
 gem 'jquery-rails'
-# gem 'turbolinks'
-gem 'turbolinks', '~> 5.2.0'
+gem 'turbolinks'
+# gem 'turbolinks', '~> 5.2.0'
 # gem 'jbuilder'
 # gem 'sdoc', '~> 0.4.0', group: :doc
 
